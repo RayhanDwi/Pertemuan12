@@ -14,7 +14,7 @@
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="282dp"
-        android:layout_height="202dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         app:srcCompat="@drawable/fairytail" />
