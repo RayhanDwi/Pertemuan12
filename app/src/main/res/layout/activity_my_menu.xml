@@ -12,19 +12,20 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pilih menu"
-        android:textSize="25dp"
-        android:textStyle="bold"
         android:layout_marginTop="30dp"
-        android:textAlignment="center"/>
+        android:text="Pilih menu"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnluassegitiga"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:backgroundTint="@color/material_dynamic_neutral30"
         android:text="Luas Segitiga"
-        android:backgroundTint="@color/material_dynamic_neutral30"/>
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btnabout"
@@ -32,13 +33,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/blue"
-        android:text="Tentang Aplikasi" />
+        android:text="Tentang Aplikasi"
+        android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnkeluar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Keluar"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/red"/>
+        android:backgroundTint="@color/red"
+        android:text="Keluar"
+        android:textColor="@color/white" />
 </LinearLayout>

@@ -1,10 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Segitiga">
+    android:orientation="vertical"
+    android:background="@color/youngblue"
+    tools:context=".MyMenu">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Luas Segitiga"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAlas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Alas Segitiga" />
+
+    <EditText
+        android:id="@+id/editAlas"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Angka"
+        style="@style/CustomEditText"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:text="Tinggi Segitiga" />
+
+    <EditText
+        android:id="@+id/editTinggi"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="Masukkan Angka"
+        style="@style/CustomEditText"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnHasil"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/Green"
+        android:text="Hasil" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Hasil : " />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/red"
+        android:text="Kembali" />
+
+</LinearLayout>

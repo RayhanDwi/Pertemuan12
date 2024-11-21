@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 String password = edpass.getText().toString();
 
                 if (email.equals("rayhandwi04@gmail.com") && password.equals("12345")){
-
+                    Intent intent = new Intent(MainActivity.this, MyMenu.class);
+                    startActivity(intent);
                 }else {
                     Toast.makeText(MainActivity.this, "Username dan Password Salah", Toast.LENGTH_SHORT).show();
                 }
