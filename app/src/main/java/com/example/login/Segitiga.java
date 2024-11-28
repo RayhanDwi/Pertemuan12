@@ -19,12 +19,13 @@ public class Segitiga extends AppCompatActivity {
     private EditText edTinggi,edAlas;
     private Button bHasil, bKembali;
     private TextView thasil;
+    private Compiler EdgeToEdge;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+        EdgeToEdge.enable();
         setContentView(R.layout.activity_segitiga);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
